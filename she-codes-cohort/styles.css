@@ -1,0 +1,57 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* order selectors like that: type - class - id */
+
+header{
+    font-weight: bold;
+}
+
+nav{
+    /* display: inline; */
+    font-size: small;
+    text-transform: uppercase;
+    float: right;
+}
+.top-container{
+    height: 1em;
+}
+
+.logo{
+    color: red;
+    text-transform: uppercase;
+    float: left
+}
+
+.main-container{
+    background-color: lightgrey;
+}
+
+.tiles{
+    background-color: grey;
+    width: 200px
+}
+
+a:hover {
+    color: red;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    color: red
+}
+
+h4{
+    color: grey;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #6b469a;
+}
