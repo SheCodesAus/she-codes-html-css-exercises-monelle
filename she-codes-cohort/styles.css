@@ -9,49 +9,92 @@ header{
 }
 
 nav{
-    /* display: inline; */
+    display: inline;
+    color:#000000;
     font-size: small;
     text-transform: uppercase;
     float: right;
 }
+
 .top-container{
     height: 1em;
 }
 
-.logo{
-    color: red;
+.logo{/* SHE CODES */
+    color: #e60000;
     text-transform: uppercase;
     float: left
 }
 
 .main-container{
-    background-color: lightgrey;
+    background-color: #eee;
 }
 
-.tiles{
-    background-color: grey;
-    width: 200px
+.tile{
+    display:inline-block;
+    background-color: #fff;
+    width: 33%
+}
+
+.tile-image{
+    object-position: center;
+    padding: 10px;
+    /* position: static; */
+    object-fit: cover;
+    height:250px;
+    width: 90%;
+}
+
+.tile > h2 { /* <- this is called selector scoping */
+    /* jhghj */
+}
+
+.padding{
+    width:auto
+}
+
+a:link{
+    color: #000000;
+}
+
+a:active{
+    color: #e60000;
 }
 
 a:hover {
-    color: red;
+    color: #e60000;
 }
 
-h2{
+h2{ /* 2021 Cohort */
     text-align: center;
+    font-size:16px;
+    padding: 10px
 }
 
-h3{
-    color: red
+h3{  /* Chilli */
+    color: #000000;
+    font-size: 14px;
+    font: weight 800px;
 }
 
-h4{
-    color: grey;
+.h4{/* , She Codes */
+    color: #bbb;
+    font-size: 14px;
 }
 
+h5{ /* Plus Brisbane */
+    color: #e60000;
+    font-variant: small-caps;
+    font-size: 14px;
+}
+
+p{/* bio */
+    font-size: 12px;
+}
 
 footer{
     text-align: center;
+    font-size: 14px;
     padding: 20px;
     color: #6b469a;
 }
