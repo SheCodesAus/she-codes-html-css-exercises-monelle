@@ -13,6 +13,11 @@ body {
     font-size: 1rem;
     font-weight: bold;
     height: calc(100% - 14px);
+    /* flexbox stuff */
+    display: flex;
+    justify-content: space;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 div {
@@ -21,3 +26,23 @@ div {
 }
 
 /*** Your code here ***/
+.demo-div{
+    flex-grow: 1;
+}
+
+#div-6{
+    flex-grow: 3;
+    /* every item is on order 0 until specified otherwise */
+    order: 1
+}
+
+#div-1{
+    flex-basis: 20%;
+    order: 2
+}
+
+#div-2{
+    flex-basis: 100px;
+    order: 3;
+}
+

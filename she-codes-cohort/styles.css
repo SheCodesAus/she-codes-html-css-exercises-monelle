@@ -16,6 +16,11 @@ nav{
     float: right;
 }
 
+body{
+    display: flex;
+    
+
+}
 .top-container{
     height: 1em;
 }
