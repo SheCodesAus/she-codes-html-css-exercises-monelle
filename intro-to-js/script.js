@@ -1,6 +1,18 @@
 window.onload = function() {
     // start
+    let starterDiv = document.getElementById('starter-div');
+    let firstHeading = document.createElement('h2');
+    firstHeading.innerText = 'This is an H2 created with JS';
+    firstHeading.classList.add('js-header');
 
+    starterDiv.appendChild(firstHeading);
+
+    let secondHeading = document.createElement('h2');
+    secondHeading.innerText = 'This is another H2 element created with JS';
+    secondHeading.classList.add('js-header');
+    secondHeading.id = 'second-h2';
+    
+    starterDiv.appendChild(secondHeading);
     // end
 }
 
@@ -8,13 +20,14 @@ window.onload = function() {
 function showName(){
     console.log('showName');
     // start
-
+    let name = document.getElementById('name').value;
+    document.getElementById('greeting-text').innerText = 'Hi ' + name;
     // end
 }
 
 function changeColour(colour) {
     // start
-
+    document.body.style.backgroundColor = colour
     // end
 }
 
@@ -24,6 +37,8 @@ function resetColour() {
 
 function toggleLightbulb() {
     // start
-
+    let lightbulb = document.getElementById('light');
+    lightbulb.classList.toggle('on');
+    console.log(lightbulb);         // adding the console.log() command allows to inspect the code in browser and see how it works//
     // end
 }
